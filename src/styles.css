@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply font-golos;
+  }
+}
+
+.w-container {
+  @apply max-w-base-1 md:max-w-base-2 lg:max-w-base-3 xl:max-w-7xl mx-auto px-7 lg:px-10; 
+}
