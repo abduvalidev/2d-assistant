@@ -28,7 +28,7 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5983 0.396674C11.9317 0.727136 11.9341 1.26532 11.6036 1.59874L9.82124 3.3971C9.15438 4.06997 8.60341 4.6259 8.11106 5.0213C7.59669 5.43439 7.06462 5.7416 6.42071 5.82368C6.14129 5.85929 5.85852 5.85929 5.5791 5.82368C4.93518 5.7416 4.40311 5.43439 3.88875 5.0213C3.39639 4.6259 2.84542 4.06997 2.17857 3.3971L0.396186 1.59874C0.0657247 1.26532 0.0681258 0.727137 0.401549 0.396675C0.734972 0.0662138 1.27316 0.0686148 1.60362 0.402038L3.35093 2.16501C4.06172 2.88217 4.54516 3.36812 4.95322 3.69583C5.34788 4.01277 5.58877 4.11116 5.79404 4.13732C5.93074 4.15475 6.06906 4.15475 6.20576 4.13732C6.41104 4.11116 6.65193 4.01277 7.04658 3.69583C7.45464 3.36812 7.93809 2.88217 8.64888 2.16501L10.3962 0.402037C10.7266 0.0686141 11.2648 0.066213 11.5983 0.396674Z" fill="currentColor"/>
           </svg>          
         </a>
-        <div class="w-[150px] bg-white absolute z-50 shadow-soft hidden group-hover:block rounded-xl p-3">
+        <div class="w-40 bg-white absolute z-50 shadow-soft hidden group-hover:block rounded-xl p-3">
           <a href="#" class="block text-brand-gray-900 transition duration-300 hover:text-primary mb-1 py-1">Применение</a>
           <a href="#" class="block text-brand-gray-900 transition duration-300 hover:text-primary mb-1 py-1">ИИ-ассистенты</a>
           <a href="#" class="block text-brand-gray-900 transition duration-300 hover:text-primary mb-1 py-1">Возможности</a>
@@ -43,7 +43,7 @@
      <!-- MENU && LOGIN -->
      <div class="flex items-center gap-5">
       <!-- LOGIN-BTN -->
-      <button class="hidden md:block bg-primary font-bold text-white transition duration-300 hover:bg-primary/80 rounded-xl py-2.5 px-6">Войти</button>
+      <button class="hidden md:block primary-btn bg-primary text-white hover:bg-primary/80">Войти</button>
       <!-- MENU-BTN -->
        <button class="p-2 block lg:hidden">
         <img src="./svg/menu.svg" alt="">
@@ -55,24 +55,29 @@
  <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section class="w-container flex gap-15 mt-15 sm:mt-10 lg:mt-17 xl:mt-30">
-      <div class="w-full max-w-[757px] text-left xs:text-center md:text-left">
-        <h1 class="font-semibold xs:font-bold xl:font-semibold text-brand-gray-900 text-[2rem] leading-[36px] xs:text-4xl md:text-[40px] lg:text-5xl xl:text-[60px] sm:leading-[1]  lg:pr-20 xs:px-10 md:px-0 mb-6">
+    <section class="w-container lg:flex gap-15 mt-15 xs:mt-10 md:mt-17 xl:mt-30">
+      <div class="w-full lg:max-w-xl xl:max-w-3xl text-left xs:text-center md:text-left lg:pr-5 xl:pr-3">
+        <h1 class="text-brand-gray-900 lg:pr-20 xs:px-10 md:px-0">
           ИИ-ассистенты для автоматизации вашего бизнеса
         </h1>
-        <p class="text-brand-gray-800 lg:text-xl xl:text-2xl mb-6 md:mt-10 lg:mb-15">
+        <p class="text-brand-gray-800 lg:text-xl xl:text-2xl mt-6">
           Платформа управления виртуальными помощниками на базе искусственного интеллекта (LLM/GPT)
         </p>
-        <div class="w-full flex flex-col md:flex-row items-center gap-3 md:gap-5">
-          <button class="w-full xs:w-[300px] bg-primary font-bold xl:text-xl text-white rounded-xl transition duration-300 hover:bg-primary/80 px-6 py-2.5">Попробовать бесплатно</button>
-          <button class="w-full xs:w-[300px] border border-primary text-primary font-bold xl:text-xl rounded-xl transition duration-300 hover:bg-primary hover:text-white px-6 py-2.5">Получить консультацию</button>
+        <div class="w-full flex flex-col md:flex-row items-center gap-3 md:gap-5 mt-6 md:mt-10 lg:mt-1.5">
+          <button class="primary-btn bg-primary text-white xl:text-xl hover:bg-primary/80 hover:border-transparent">Попробовать бесплатно</button>
+          <button class="primary-btn text-primary bg-white xl:text-xl hover:bg-primary hover:text-white">Получить консультацию</button>
         </div>
       </div>
       
       <div class="shrink-0 hidden lg:block w-[307px] xl:w-96 h-[359px] xl:h-[447px] overflow-hidden">
-        <img class="w-[412px] xl:w-[501px] h-[412px] xl:h-[501px] object-cover" src="./images/robot.jpg" alt="">
+        <img class="w-full h-full object-cover" src="./images/robot.jpg" alt="">
       </div>
     </section>
+
+    <!-- CHAT SECTION -->
+     <section class="bg-brand-gray-900 mt-15 xs:mt-10 md:mt-17 xl:mt-28">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi rerum vero rem tempora recusandae libero officiis, veritatis est voluptatibus deserunt qui fuga. Totam ad in reiciendis assumenda nostrum ipsum illum.
+     </section>
   </main>
 </body>
 </html>

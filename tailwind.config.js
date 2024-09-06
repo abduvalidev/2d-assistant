@@ -13,6 +13,11 @@ module.exports = {
       fontFamily: {
         golos: "Golos Text",
       },
+      fontSize: {
+        8: '2rem',
+        10: '2.5rem',
+        15: '3.75rem',
+      },
       spacing: {
         "base-1": "32.25rem",
         "base-2": "42.25rem",
