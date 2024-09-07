@@ -3,7 +3,7 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     screens: {
-      xs: '576px',
+      xs: "576px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -14,9 +14,9 @@ module.exports = {
         golos: "Golos Text",
       },
       fontSize: {
-        8: '2rem',
-        10: '2.5rem',
-        15: '3.75rem',
+        8: ["2rem", "36px"],
+        10: ["2.5rem", "56px"],
+        15: ["3.75rem", "72px"],
       },
       spacing: {
         "base-1": "32.25rem",
@@ -25,11 +25,14 @@ module.exports = {
         15: "3.75rem",
         17: "4.25rem",
         30: "7.5rem",
+        40: "12.5rem",
+        129: "32.25rem",
       },
       colors: {
         primary: "#356FEC",
         brand: {
           gray: {
+            50: "#EFEFF8",
             400: "#D9D9E5",
             800: "#666679",
             900: "#2B2B2B",

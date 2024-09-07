@@ -43,7 +43,7 @@
      <!-- MENU && LOGIN -->
      <div class="flex items-center gap-5">
       <!-- LOGIN-BTN -->
-      <button class="hidden md:block primary-btn bg-primary text-white hover:bg-primary/80">Войти</button>
+      <button class="hidden md:block w-full xs:w-auto primary-btn bg-primary text-white hover:bg-primary/80">Войти</button>
       <!-- MENU-BTN -->
        <button class="p-2 block lg:hidden">
         <img src="./svg/menu.svg" alt="">
@@ -55,29 +55,157 @@
  <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section class="w-container lg:flex gap-15 mt-15 xs:mt-10 md:mt-17 xl:mt-30">
-      <div class="w-full lg:max-w-xl xl:max-w-3xl text-left xs:text-center md:text-left lg:pr-5 xl:pr-3">
+    <section class="w-container lg:grid grid-cols-3 items-center gap-15 py-15 xs:py-10 md:py-17 xl:pt-30 xl:pb-24">
+      <div class="lg:col-span-2 w-full text-left xs:text-center md:text-left lg:pr-5 xl:pr-3">
         <h1 class="text-brand-gray-900 lg:pr-20 xs:px-10 md:px-0">
           ИИ-ассистенты для автоматизации вашего бизнеса
         </h1>
         <p class="text-brand-gray-800 lg:text-xl xl:text-2xl mt-6">
           Платформа управления виртуальными помощниками на базе искусственного интеллекта (LLM/GPT)
         </p>
-        <div class="w-full flex flex-col md:flex-row items-center gap-3 md:gap-5 mt-6 md:mt-10 lg:mt-1.5">
-          <button class="primary-btn bg-primary text-white xl:text-xl hover:bg-primary/80 hover:border-transparent">Попробовать бесплатно</button>
-          <button class="primary-btn text-primary bg-white xl:text-xl hover:bg-primary hover:text-white">Получить консультацию</button>
+        <div class="w-full flex flex-col md:flex-row items-center gap-3 md:gap-5 mt-6 md:mt-10 lg:mt-15">
+          <button class="w-full xs:w-auto primary-btn bg-primary text-white xl:text-xl hover:bg-primary/80 hover:border-transparent">Попробовать бесплатно</button>
+          <button class="w-full xs:w-auto primary-btn text-primary bg-white xl:text-xl hover:bg-primary hover:text-white">Получить консультацию</button>
         </div>
       </div>
-      
-      <div class="shrink-0 hidden lg:block w-[307px] xl:w-96 h-[359px] xl:h-[447px] overflow-hidden">
+      <div class="hidden lg:block h-[22.5rem] xl:h-[28rem] overflow-hidden">
         <img class="w-full h-full object-cover" src="./images/robot.jpg" alt="">
       </div>
     </section>
 
     <!-- CHAT SECTION -->
-     <section class="bg-brand-gray-900 mt-15 xs:mt-10 md:mt-17 xl:mt-28">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi rerum vero rem tempora recusandae libero officiis, veritatis est voluptatibus deserunt qui fuga. Totam ad in reiciendis assumenda nostrum ipsum illum.
+     <section class="bg-brand-gray-900 py-10 md:py-15 xl:py-20">
+      <div>
+
+      </div>
+      <div class="w-container lg:flex items-center justify-between gap-x-24 space-y-10 lg:space-y-0 mt-8 xs:mt-10 md:mt-12 xl:mt-15">
+        <div class="w-full lg:max-w-80">
+          <h2 class="text-white">
+            Автоматизируйте до 80% обращений в поддержку
+          </h2>
+          <p class="text-brand-gray-50 text-sm xs:text-base mt-5 xs:mt-6">
+            Решайте с командой самые сложные и самые важные кейсы. Все остальные обращения доверьте умному ассистенту.
+            <br><br>
+            Робот самостоятельно определит тему запроса, найдет подходящую информацию в базе знаний/документах и составит ответ в соответствии с правилами компании.
+          </p>
+        </div>
+
+        <div class="w-full lg:max-w-129">
+          <!-- USER -->
+          <div class="flex gap-x-2 items-end">
+            <div>
+              <p class="bg-white text-xs xs:text-sm rounded-2xl py-3 px-4">Какие этапы включает в себя процесс отбора на данную позицию?</p>
+            </div>
+            <div class="shrink-0 w-9 h-9 xs:w-12 xs:h-12 xl:w-17 xl:h-17 rounded-full overflow-hidden">
+              <img class="w-full h-full object-cover" src="./svg/ellipse.svg" alt="">
+            </div>
+          </div>
+          <!-- CHAT -->
+          <div>
+
+          </div>
+        </div>
+      </div>
      </section>
+
+     <!-- AI ASSISTANT -->
+      <section class="w-container lg:flex items-center justify-between gap-10 mt-30 xl:mt-40">
+        <div class="w-full lg:max-w-80 xl:max-w-129">
+          <h2 class="text-brand-gray-900">Возможности <br class="hidden lg:block"> ИИ-ассистентов</h2>
+          <p class="text-brand-gray-800 text-sm xs:text-base mt-5 xs:mt-6">
+            ИИ-ассистенту можно делегировать работу не только 
+            с типовыми запросами.
+            <br><br>
+            Он понимает сложные запросы, учитывает контекст диалога, умеет задавать уточняющие вопросы, искать и анализировать информацию.
+          </p>
+          <button class="primary-btn text-white bg-primary hover:bg-primary/80 mt-5 xs:mt-6">Попробовать беплатно</button>
+        </div>
+        <div class="w-full lg:max-w-129 space-y-3 mt-8 xs:mt-10 lg:mt-0">
+          <div class="border rounded-2xl py-3 px-4">
+            <button class="w-full flex items-center justify-between">
+              <span class="font-bold xs:font-normal text-brand-gray-900 xs:text-xl">Ответы на общие вопросы</span>
+              <svg class="rotate-45" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00039 0.149902C9.46983 0.149902 9.85039 0.53046 9.85039 0.999902L9.85039 8.1499H17.0004C17.4698 8.1499 17.8504 8.53046 17.8504 8.9999C17.8504 9.46935 17.4698 9.8499 17.0004 9.8499H9.85039V16.9999C9.85039 17.4693 9.46983 17.8499 9.00039 17.8499C8.53095 17.8499 8.15039 17.4693 8.15039 16.9999V9.8499H1.00039C0.530949 9.8499 0.150391 9.46935 0.150391 8.9999C0.150391 8.53046 0.530949 8.1499 1.00039 8.1499H8.15039L8.15039 0.999902C8.15039 0.53046 8.53095 0.149902 9.00039 0.149902Z" fill="#666679"/>
+              </svg>                            
+            </button>
+            <p class="text-sm xs:text-base mt-4">
+              Ассистент может отвечать на общие вопросы клиентов, такие как информация о продукте, цены, условиях работы, процессе заказа и т.д. Это позволит сократить нагрузку на реальных менеджеров и обеспечить быструю поддержку клиентам.
+            </p>
+          </div>
+
+          <div class="border rounded-2xl py-3 px-4">
+            <button class="w-full flex items-center justify-between">
+              <span class="font-bold xs:font-normal text-brand-gray-900 xs:text-xl">Поддержка в выборе услуг/товаров</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00039 0.149902C9.46983 0.149902 9.85039 0.53046 9.85039 0.999902L9.85039 8.1499H17.0004C17.4698 8.1499 17.8504 8.53046 17.8504 8.9999C17.8504 9.46935 17.4698 9.8499 17.0004 9.8499H9.85039V16.9999C9.85039 17.4693 9.46983 17.8499 9.00039 17.8499C8.53095 17.8499 8.15039 17.4693 8.15039 16.9999V9.8499H1.00039C0.530949 9.8499 0.150391 9.46935 0.150391 8.9999C0.150391 8.53046 0.530949 8.1499 1.00039 8.1499H8.15039L8.15039 0.999902C8.15039 0.53046 8.53095 0.149902 9.00039 0.149902Z" fill="#666679"/>
+                </svg>                            
+            </button>
+            <p class="hidden text-sm xs:text-base mt-4">
+              Ассистент может отвечать на общие вопросы клиентов, такие как информация о продукте, цены, условиях работы, процессе заказа и т.д. Это позволит сократить нагрузку на реальных менеджеров и обеспечить быструю поддержку клиентам.
+            </p>
+          </div>
+
+          <div class="border rounded-2xl py-3 px-4">
+            <button class="w-full flex items-center justify-between">
+              <span class="font-bold xs:font-normal text-brand-gray-900 xs:text-xl">Помощь в решение проблем</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00039 0.149902C9.46983 0.149902 9.85039 0.53046 9.85039 0.999902L9.85039 8.1499H17.0004C17.4698 8.1499 17.8504 8.53046 17.8504 8.9999C17.8504 9.46935 17.4698 9.8499 17.0004 9.8499H9.85039V16.9999C9.85039 17.4693 9.46983 17.8499 9.00039 17.8499C8.53095 17.8499 8.15039 17.4693 8.15039 16.9999V9.8499H1.00039C0.530949 9.8499 0.150391 9.46935 0.150391 8.9999C0.150391 8.53046 0.530949 8.1499 1.00039 8.1499H8.15039L8.15039 0.999902C8.15039 0.53046 8.53095 0.149902 9.00039 0.149902Z" fill="#666679"/>
+                </svg>                            
+            </button>
+            <p class="hidden text-sm xs:text-base mt-4">
+              Ассистент может отвечать на общие вопросы клиентов, такие как информация о продукте, цены, условиях работы, процессе заказа и т.д. Это позволит сократить нагрузку на реальных менеджеров и обеспечить быструю поддержку клиентам.
+            </p>
+          </div>
+
+          <div class="border rounded-2xl py-3 px-4">
+            <button class="w-full flex items-center justify-between">
+              <span class="font-bold xs:font-normal text-brand-gray-900 xs:text-xl">Обработка претензий и жалоб</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00039 0.149902C9.46983 0.149902 9.85039 0.53046 9.85039 0.999902L9.85039 8.1499H17.0004C17.4698 8.1499 17.8504 8.53046 17.8504 8.9999C17.8504 9.46935 17.4698 9.8499 17.0004 9.8499H9.85039V16.9999C9.85039 17.4693 9.46983 17.8499 9.00039 17.8499C8.53095 17.8499 8.15039 17.4693 8.15039 16.9999V9.8499H1.00039C0.530949 9.8499 0.150391 9.46935 0.150391 8.9999C0.150391 8.53046 0.530949 8.1499 1.00039 8.1499H8.15039L8.15039 0.999902C8.15039 0.53046 8.53095 0.149902 9.00039 0.149902Z" fill="#666679"/>
+                </svg>                            
+            </button>
+            <p class="hidden text-sm xs:text-base mt-4">
+              Ассистент может отвечать на общие вопросы клиентов, такие как информация о продукте, цены, условиях работы, процессе заказа и т.д. Это позволит сократить нагрузку на реальных менеджеров и обеспечить быструю поддержку клиентам.
+            </p>
+          </div>
+
+          <div class="border rounded-2xl py-3 px-4">
+            <button class="w-full flex items-center justify-between">
+              <span class="font-bold xs:font-normal text-brand-gray-900 xs:text-xl">Сбор заявок и контактов</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00039 0.149902C9.46983 0.149902 9.85039 0.53046 9.85039 0.999902L9.85039 8.1499H17.0004C17.4698 8.1499 17.8504 8.53046 17.8504 8.9999C17.8504 9.46935 17.4698 9.8499 17.0004 9.8499H9.85039V16.9999C9.85039 17.4693 9.46983 17.8499 9.00039 17.8499C8.53095 17.8499 8.15039 17.4693 8.15039 16.9999V9.8499H1.00039C0.530949 9.8499 0.150391 9.46935 0.150391 8.9999C0.150391 8.53046 0.530949 8.1499 1.00039 8.1499H8.15039L8.15039 0.999902C8.15039 0.53046 8.53095 0.149902 9.00039 0.149902Z" fill="#666679"/>
+                </svg>                            
+            </button>
+            <p class="hidden text-sm xs:text-base mt-4">
+              Ассистент может отвечать на общие вопросы клиентов, такие как информация о продукте, цены, условиях работы, процессе заказа и т.д. Это позволит сократить нагрузку на реальных менеджеров и обеспечить быструю поддержку клиентам.
+            </p>
+          </div>
+
+          <div class="border rounded-2xl py-3 px-4">
+            <button class="w-full flex items-center justify-between">
+              <span class="font-bold xs:font-normal text-brand-gray-900 xs:text-xl">Предоставление данных о заказе</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00039 0.149902C9.46983 0.149902 9.85039 0.53046 9.85039 0.999902L9.85039 8.1499H17.0004C17.4698 8.1499 17.8504 8.53046 17.8504 8.9999C17.8504 9.46935 17.4698 9.8499 17.0004 9.8499H9.85039V16.9999C9.85039 17.4693 9.46983 17.8499 9.00039 17.8499C8.53095 17.8499 8.15039 17.4693 8.15039 16.9999V9.8499H1.00039C0.530949 9.8499 0.150391 9.46935 0.150391 8.9999C0.150391 8.53046 0.530949 8.1499 1.00039 8.1499H8.15039L8.15039 0.999902C8.15039 0.53046 8.53095 0.149902 9.00039 0.149902Z" fill="#666679"/>
+                </svg>                            
+            </button>
+            <p class="hidden text-sm xs:text-base mt-4">
+              Ассистент может отвечать на общие вопросы клиентов, такие как информация о продукте, цены, условиях работы, процессе заказа и т.д. Это позволит сократить нагрузку на реальных менеджеров и обеспечить быструю поддержку клиентам.
+            </p>
+          </div>
+
+          <div class="border rounded-2xl py-3 px-4">
+            <button class="w-full flex items-center justify-between">
+              <span class="font-bold xs:font-normal text-brand-gray-900 xs:text-xl">Уведомления и рассылки</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00039 0.149902C9.46983 0.149902 9.85039 0.53046 9.85039 0.999902L9.85039 8.1499H17.0004C17.4698 8.1499 17.8504 8.53046 17.8504 8.9999C17.8504 9.46935 17.4698 9.8499 17.0004 9.8499H9.85039V16.9999C9.85039 17.4693 9.46983 17.8499 9.00039 17.8499C8.53095 17.8499 8.15039 17.4693 8.15039 16.9999V9.8499H1.00039C0.530949 9.8499 0.150391 9.46935 0.150391 8.9999C0.150391 8.53046 0.530949 8.1499 1.00039 8.1499H8.15039L8.15039 0.999902C8.15039 0.53046 8.53095 0.149902 9.00039 0.149902Z" fill="#666679"/>
+                </svg>                            
+            </button>
+            <p class="hidden text-sm xs:text-base mt-4">
+              Ассистент может отвечать на общие вопросы клиентов, такие как информация о продукте, цены, условиях работы, процессе заказа и т.д. Это позволит сократить нагрузку на реальных менеджеров и обеспечить быструю поддержку клиентам.
+            </p>
+          </div>
+        </div>
+      </section>
   </main>
 </body>
 </html>
