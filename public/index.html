@@ -345,7 +345,7 @@
           <p class="text-brand-gray-800 text-sm xs:text-base xl:text-xl  mt-3 md:mt-4 lg:mt-6">
             Передавайте ИИ-ассистентам актуальные знания различными способами: документы, веб-сайт, интеграции с сервисами и базами знаний и данных, а также ручной ввод информации в интерфейсе платформы
           </p>
-          <div class="h-60 grid xs:grid-cols-5 xs:grid-rows-3 gap-3 items-center justify-between mt-4 md:mt-5 xl:mt-6 md:px-20 lg:px-0 xl:px-10">
+          <div class="lg:h-60 grid xs:grid-cols-5 xs:grid-rows-3 gap-3 items-center justify-between mt-4 md:mt-5 xl:mt-6 md:px-20 lg:px-0 xl:px-10">
             <div class="xs:col-span-4 row-span-2 bg-white shadow-soft rounded-2xl p-3 md:p-4">
               <p class="text-brand-gray-800 text-xs">Условия доставки</p>
               <p class="text-brand-gray-900 text-sm mt-2">Время доставки заказа по Москве составляет <span class="bg-[#E9EFFF]">4 часа |</span></p>
@@ -379,7 +379,7 @@
             Настраивайте и тестируйте новых ИИ-ассистентов перед их публикацией для внешних пользователей
           </p>
           <div class="mt-4 md:mt-5 xl:mt-6">
-            <img class="w-full h-[336px]" src="./svg/chatbot-with-user.svg" alt="">
+            <img class="w-full" src="./svg/chatbot-with-user.svg" alt="">
           </div>
         </div>
       </div>
@@ -392,8 +392,59 @@
       </div>
       <div class="grid grid-cols-2 gap-8">
         <div class="border border-brand-gray-400 rounded-2xl p-4">
-          <div class="w-full h-80 bg-gradient-to-t to-brand-gray-100 from-white rounded-2xl">
-
+          <div class="w-full h-full flex flex-col justify-between bg-gradient-to-t to-brand-gray-100 from-white rounded-2xl p-4">
+            <div>
+              <h3 class="text-brand-gray-900">Облачная версия (SaaS) </h3>
+              <p class="text-brand-gray-800 mt-3 md:mt-4 lg:mt-6">
+                Платформа находится в нашем облаке <br><br class="">
+                Оплата за каждое сообщение, обработанное ИИ-ассистентом, 
+                и за размер знаний
+              </p>
+              <p class="text-brand-gray-900 mt-4">Дополнительные услуги:</p>
+              <ul class="mt-1 space-y-1">
+                <li class="flex items-center gap-x-2">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.13137 6.47439C0.506532 5.84955 0.506532 4.83649 1.13137 4.21165L4.52548 0.817534C5.15032 0.192695 6.16339 0.192695 6.78823 0.817534L10.1823 4.21165C10.8072 4.83649 10.8072 5.84955 10.1823 6.47439L6.78822 9.8685C6.16339 10.4933 5.15032 10.4933 4.52548 9.8685L1.13137 6.47439Z" fill="#356FEC"/>
+                  </svg>  
+                  <p class="text-brand-gray-900">Индивидуальные доработки и интеграции</p>                
+                </li>
+              </ul>
+            </div>
+            <button class="w-max primary-btn bg-primary text-white hover:bg-primary/80 mt-4 md:mt-5 lg:mt-6">Запросить тарифы</button>
+          </div>
+        </div>
+        <div class="border border-brand-gray-400 rounded-2xl p-4">
+          <div class="w-full h-full flex flex-col justify-between bg-gradient-to-t to-brand-gray-100 from-white rounded-2xl p-4">
+            <div>
+              <h3 class="text-brand-gray-900">Облачная версия (SaaS) </h3>
+              <p class="text-brand-gray-800 mt-3 md:mt-4 lg:mt-6">
+                Платформа находится в нашем облаке <br><br class="">
+                Оплата за каждое сообщение, обработанное ИИ-ассистентом, 
+                и за размер знаний
+              </p>
+              <p class="text-brand-gray-900 mt-4">Дополнительные услуги:</p>
+              <ul class="mt-1 space-y-1">
+                <li class="flex items-center gap-x-2">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.13137 6.47439C0.506532 5.84955 0.506532 4.83649 1.13137 4.21165L4.52548 0.817534C5.15032 0.192695 6.16339 0.192695 6.78823 0.817534L10.1823 4.21165C10.8072 4.83649 10.8072 5.84955 10.1823 6.47439L6.78822 9.8685C6.16339 10.4933 5.15032 10.4933 4.52548 9.8685L1.13137 6.47439Z" fill="#356FEC"/>
+                  </svg>  
+                  <p class="text-brand-gray-900">Внедрение</p>                
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.13137 6.47439C0.506532 5.84955 0.506532 4.83649 1.13137 4.21165L4.52548 0.817534C5.15032 0.192695 6.16339 0.192695 6.78823 0.817534L10.1823 4.21165C10.8072 4.83649 10.8072 5.84955 10.1823 6.47439L6.78822 9.8685C6.16339 10.4933 5.15032 10.4933 4.52548 9.8685L1.13137 6.47439Z" fill="#356FEC"/>
+                  </svg>  
+                  <p class="text-brand-gray-900">Поддержка</p>                
+                </li>
+                <li class="flex items-center gap-x-2">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.13137 6.47439C0.506532 5.84955 0.506532 4.83649 1.13137 4.21165L4.52548 0.817534C5.15032 0.192695 6.16339 0.192695 6.78823 0.817534L10.1823 4.21165C10.8072 4.83649 10.8072 5.84955 10.1823 6.47439L6.78822 9.8685C6.16339 10.4933 5.15032 10.4933 4.52548 9.8685L1.13137 6.47439Z" fill="#356FEC"/>
+                  </svg>  
+                  <p class="text-brand-gray-900">Индивидуальные доработки и интеграции</p>                
+                </li>
+              </ul>
+            </div>
+            <button class="w-max primary-btn bg-primary text-white hover:bg-primary/80 mt-4 md:mt-5 lg:mt-6">Запросить тарифы</button>
           </div>
         </div>
       </div>
