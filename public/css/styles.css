@@ -620,9 +620,6 @@ video {
   height: -moz-max-content;
   height: max-content;
 }
-.h-76 {
-  height: 19rem;
-}
 .w-10 {
   width: 2.5rem;
 }
@@ -832,6 +829,9 @@ video {
 }
 .p-4 {
   padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
 }
 .\!px-3 {
   padding-left: 0.75rem !important;
