@@ -528,6 +528,9 @@ video {
 .mt-30 {
   margin-top: 7.5rem;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -537,20 +540,11 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-4 {
-  margin-top: 1rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
-}
 .block {
   display: block;
 }
 .flex {
   display: flex;
-}
-.grid {
-  display: grid;
 }
 .hidden {
   display: none;
@@ -579,9 +573,6 @@ video {
 .w-full {
   width: 100%;
 }
-.max-w-xl {
-  max-width: 36rem;
-}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -591,9 +582,6 @@ video {
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -607,6 +595,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .gap-15 {
   gap: 3.75rem;
 }
@@ -615,12 +606,6 @@ video {
 }
 .gap-5 {
   gap: 1.25rem;
-}
-.gap-10 {
-  gap: 2.5rem;
-}
-.gap-24 {
-  gap: 6rem;
 }
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
@@ -730,10 +715,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
@@ -873,6 +854,9 @@ h2 {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+.primary-btn:hover {
+  border-color: transparent;
 }
 .hover\:border-transparent:hover {
   border-color: transparent;
@@ -1020,12 +1004,12 @@ h2 {
     grid-column: span 2 / span 2;
   }
 
-  .lg\:mt-15 {
-    margin-top: 3.75rem;
-  }
-
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-15 {
+    margin-top: 3.75rem;
   }
 
   .lg\:block {
@@ -1044,20 +1028,12 @@ h2 {
     display: none;
   }
 
-  .lg\:max-w-80 {
-    max-width: 20rem;
-  }
-
-  .lg\:max-w-\[32\.25rem\] {
-    max-width: 32.25rem;
-  }
-
   .lg\:max-w-129 {
     max-width: 32.25rem;
   }
 
-  .lg\:max-w-xl {
-    max-width: 36rem;
+  .lg\:max-w-80 {
+    max-width: 20rem;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1077,14 +1053,6 @@ h2 {
 
   .lg\:pr-5 {
     padding-right: 1.25rem;
-  }
-
-  .lg\:pr-24 {
-    padding-right: 6rem;
-  }
-
-  .lg\:pr-28 {
-    padding-right: 7rem;
   }
 
   .lg\:text-xl {
@@ -1127,20 +1095,16 @@ h2 {
     padding-bottom: 6rem;
   }
 
+  .xl\:pr-20 {
+    padding-right: 5rem;
+  }
+
   .xl\:pr-3 {
     padding-right: 0.75rem;
   }
 
   .xl\:pt-30 {
     padding-top: 7.5rem;
-  }
-
-  .xl\:pr-20 {
-    padding-right: 5rem;
-  }
-
-  .xl\:pr-40 {
-    padding-right: 12.5rem;
   }
 
   .xl\:text-2xl {
