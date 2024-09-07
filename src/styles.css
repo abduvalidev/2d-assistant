@@ -20,6 +20,10 @@ h1 {
 h2 {
   @apply font-bold xs:font-semibold text-2xl md:text-8
 }
+
+h3 {
+  @apply font-bold text-brand-gray-900 text-xl md:text-2xl
+}
 .primary-btn {
   @apply border border-primary hover:border-transparent font-bold rounded-xl transition duration-300 px-6 py-2.5 
 } 

@@ -32,14 +32,22 @@ module.exports = {
         brand: {
           gray: {
             50: "#EFEFF8",
+            100: "#F3F6FF",
+            200: "#F7F7F9",
             400: "#D9D9E5",
             800: "#666679",
             900: "#2B2B2B",
           },
         },
       },
+      aspectRatio: {
+        "4/3": "436/352",
+      },
       boxShadow: {
         soft: "0 0 12px rgba(130, 129, 152, 0.2)",
+      },
+      borderRadius: {
+        5: "20px",
       },
     },
   },
