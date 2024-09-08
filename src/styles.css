@@ -14,7 +14,7 @@
 }
 
 h1 {
-  @apply font-semibold xs:font-bold xl:font-semibold text-8 xs:text-10 md:text-4xl lg:text-5xl xl:text-15
+  @apply font-semibold xs:font-bold xl:font-semibold text-8 xs:text-10 md:text-4xl lg:text-5xl xl:text-15 md:!leading-[3.5rem] xl:!leading-[4.5rem]
 }
 
 h2 {

@@ -1037,7 +1037,7 @@ h1 {
 
   h1 {
     font-size: 2.25rem;
-    line-height: 2.5rem;
+    line-height: 3.5rem !important;
   }
 }
 
@@ -1055,6 +1055,7 @@ h1 {
     font-size: 3.75rem;
     line-height: 72px;
     font-weight: 600;
+    line-height: 4.5rem !important;
   }
 }
 
@@ -1514,10 +1515,6 @@ h3 {
     height: 15rem;
   }
 
-  .lg\:w-3\/5 {
-    width: 60%;
-  }
-
   .lg\:max-w-80 {
     max-width: 20rem;
   }
@@ -1680,10 +1677,6 @@ h3 {
 
   .xl\:h-\[28rem\] {
     height: 28rem;
-  }
-
-  .xl\:w-full {
-    width: 100%;
   }
 
   .xl\:max-w-\[582px\] {
