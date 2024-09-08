@@ -30,6 +30,7 @@ module.exports = {
       },
       colors: {
         primary: "#356FEC",
+        secondary: "#8F8FA0",
         brand: {
           gray: {
             50: "#EFEFF8",

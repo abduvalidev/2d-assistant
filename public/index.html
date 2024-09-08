@@ -16,7 +16,7 @@
   <body>
     <!-- HEADER -->
     <header
-      class="sticky top-0 z-40 bg-white border-b border-brand-gray-400 py-4 xs:py-5 lg:py-2"
+      class="sticky top-0 z-40 bg-white border-b border-brand-gray-400 py-4 xs:py-5 xl:py-2"
     >
       <nav class="w-container flex items-center justify-between gap-x-10">
         <!-- LOGO -->
@@ -107,7 +107,7 @@
         <div
           class="col-span-2 w-full text-left md:text-center lg:text-left lg:pr-5 xl:pr-3"
         >
-          <h1 class="uppercase text-brand-gray-900">
+          <h1 class="xs:uppercase text-brand-gray-900">
             ИИ-ассистенты для автоматизации вашего бизнеса
           </h1>
           <p
@@ -524,7 +524,7 @@
 
       <!-- ADVANTAGES OF -->
       <section class="w-container mt-30 xl:mt-40">
-        <div class=" mb-8 xs:mb-10 md:mb-12 xl:mb-15">
+        <div class="mb-8 xs:mb-10 md:mb-12 xl:mb-15">
           <h2 class="text-brand-gray-900">
             ИИ-ассистенты: чем они лучше обычных чат-ботов?
           </h2>
@@ -801,7 +801,7 @@
             class="border border-brand-gray-400 rounded-5 xs:rounded-3xl p-3 xs:p-4"
           >
             <div
-              class="w-full h-full flex flex-col justify-between bg-gradient-to-t to-brand-gray-100 from-white rounded-2xl p-3 xs:p-4"
+              class="w-full h-full flex flex-col justify-between bg-gradient-to-t to-100% to-brand-gray-100 from-white rounded-2xl p-3 xs:p-4"
             >
               <div>
                 <h3 class="text-brand-gray-900">Облачная версия (SaaS)</h3>
@@ -847,7 +847,7 @@
             class="border border-brand-gray-400 rounded-5 xs:rounded-3xl p-3 xs:p-4"
           >
             <div
-              class="w-full h-full flex flex-col justify-between bg-gradient-to-t to-brand-gray-100 from-white rounded-2xl p-3 xs:p-4"
+              class="w-full h-full flex flex-col justify-between bg-gradient-to-t to-100% to-brand-gray-100 from-white rounded-2xl p-3 xs:p-4"
             >
               <div>
                 <h3 class="text-brand-gray-900">
@@ -1118,8 +1118,10 @@
           <h2 class="text-brand-gray-900">Остались сомнения или вопросы?</h2>
         </div>
 
-        <div class="flex gap-8 lg:gap-24">
-          <div class="w-full lg:max-w-80 xl:max-w-base-1 flex flex-col justify-between gap-y-4 xl:gap-y-6">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-24">
+          <div
+            class="w-full lg:max-w-80 xl:max-w-base-1 flex flex-col justify-between gap-y-4 xl:gap-y-6"
+          >
             <div>
               <h3 class="text-base xs:text-xl lg:text-base xl:text-2xl">
                 Поговорите с демо ИИ-ассистентом:
@@ -1226,32 +1228,161 @@
       </section>
 
       <!-- Contact -->
-      <section class="w-container mt-30 xl:mt-40">
-        <div class="w-full lg:max-w-96">
-          <h3
+      <section class="flex flex-col lg:flex-row items-center justify-between gap-6 xl:gap-16 w-container mt-30 xl:mt-40">
+        <div class="w-full lg:max-w-80 xl:max-w-[486px]">
+          <h4
             class="font-bold text-2xl xs:text-8 md:text-2xl lg:text-8 xl:text-5xl"
           >
             Получить консультацию и узнать условия:
-          </h3>
+          </h4>
+          <div class="space-y-2 lg:space-y-5 mt-3 lg:mt-4 xl:mt-6">
+            <a href="#" class="xs:w-max text-primary flex items-center gap-4">
+              <div class="w-max bg-brand-gray-200 rounded-5 p-3">
+                <img src="./svg/email.svg" alt="" />
+              </div>
+              <span class="font-bold text-sm xl:text-xl">hi@2people.io </span>
+            </a>
+            <a href="#" class="xs:w-max text-primary flex items-center gap-4">
+              <div class="w-max bg-brand-gray-200 rounded-5 p-3">
+                <img src="./svg/telegramlogo.svg" alt="" />
+              </div>
+              <span class="font-bold text-sm xl:text-xl"> Документация </span>
+            </a>
+          </div>
         </div>
-        <div class="space-y-2 lg:space-y-5 mt-3 lg:mt-4 xl:mt-6">
-          <a href="#" class="xs:w-max text-primary flex items-center gap-4">
-            <div class="w-max bg-brand-gray-200 rounded-5 p-3">
-              <img src="./svg/email.svg" alt="" />
+
+        <div class="w-full max-w-[690px] bg-brand-gray-900 rounded-5 xl:rounded-[40px] p-5 xs:p-10 md:p-8 lg:p-10 xl:p-15">
+          <form class="grid xs:grid-cols-2 xl:grid-cols-1 gap-y-8 gap-x-2">
+            <div class="">
+              <input
+                type="text"
+                placeholder="Ваше имя*"
+                class="w-full text-base xl:text-xl text-gray-400 placeholder-secondary border border-secondary bg-transparent rounded-xl focus:outline-none py-3 px-4"
+              />
             </div>
-            <span class="font-bold text-sm xl:text-xl">hi@2people.io </span>
-          </a>
-          <a href="#" class="xs:w-max text-primary flex items-center gap-4">
-            <div class="w-max bg-brand-gray-200 rounded-5 p-3">
-              <img src="./svg/telegramlogo.svg" alt="" />
+            <div>
+              <input
+                type="text"
+                placeholder="Компания"
+                class="w-full text-base xl:text-xl text-gray-400 placeholder-secondary border border-secondary bg-transparent rounded-xl focus:outline-none py-3 px-4"
+              />
             </div>
-            <span class="font-bold text-sm xl:text-xl"> Документация </span>
-          </a>
+            <div>
+              <input
+                type="email"
+                placeholder="Email*"
+                class="w-full text-base xl:text-xl text-gray-400 placeholder-secondary border border-secondary bg-transparent rounded-xl focus:outline-none py-3 px-4"
+              />
+            </div>
+            <div>
+              <input
+                type="number"
+                placeholder="Телефон"
+                class="w-full text-base xl:text-xl text-gray-400 placeholder-secondary border border-secondary bg-transparent rounded-xl focus:outline-none py-3 px-4"
+              />
+            </div>
+            <div class="xs:col-span-2 xl:col-span-1">
+              <div>
+                <textarea
+                  placeholder="Введите сообщение*"
+                  maxlength="300"
+                  class="w-full p-3 text-sm text-brand-gray-400 placeholder-secondary bg-transparent border border-secondary rounded-lg outline-none"
+                ></textarea>
+                <div class="text-right text-xs text-gray-500">0/300</div>
+              </div>
+              <div class="flex items-center gap-x-2 mt-15">
+                <input
+                  type="checkbox"
+                  class="w-4 h-4 mt-1 rounded bg-transparent"
+                />
+                <label for="terms" class="ml-2 text-sm text-brand-gray-400">
+                  Я соглашаюсь с
+                  <a href="#" class="text-sm text-[#007AFF] underline"
+                    >Политикой конфиденциальности</a
+                  >
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="w-full text-sm xs:text-base font-medium text-brand-gray-800 bg-brand-gray-950 rounded-xl outline-none transition duration-300 hover:bg-brand-gray-950/80 mt-11 px-4 py-2"
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="border-t border-brand-gray-400 mt-30 xl:mt-40">
+      <div class="w-container pt-10 xs:pt-12 md:pt-14 lg:pt-20">
+        <div class="flex flex-col xs:flex-row md:items-center lg:items-start justify-between gap-x-5 lg:gap-x-20 xl:gap-x-[166px] gap-y-8">
+          <div class="w-full flex flex-col lg:flex-row justify-between gap-x-5 gap-y-8">
+            <div>
+              <a href="#">
+                <img src="./svg/logo.svg" alt="">
+              </a>
+              <p class="text-brand-gray-900 mt-6">Разработано в <a href="#" class="text-primary/80">2PEOPLE IT </a></p>
+            </div>
+            <div>
+              <h5 class="font-bold text-brand-gray-800">О платформе</h5>
+              <div class="w-full flex flex-row md:flex-col justify-between gap-6 md:gap-3 mt-3">
+                <div class="space-y-3">
+                  <a href="#" class="block text-brand-gray-800 transition duration-300 hover:text-primary">Применение</a>
+                  <a href="#" class="block text-brand-gray-800 transition duration-300 hover:text-primary">ИИ-ассистенты</a>
+                  <a href="#" class="block text-brand-gray-800 transition duration-300 hover:text-primary">Возможности</a>
+                </div>
+    
+                <div class="space-y-3">
+                  <a href="#" class="block text-brand-gray-800 transition duration-300 hover:text-primary">Тарифы</a>
+                  <a href="#" class="block text-brand-gray-800 transition duration-300 hover:text-primary">Демо</a>
+                  <a href="#" class="block text-brand-gray-800 transition duration-300 hover:text-primary">Документация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full flex flex-col lg:flex-row justify-between gap-x-5 gap-y-8">
+            <div class="text-brand-gray-800">
+              <h5 class=" font-bold">Контакты</h5>
+              <div class="whitespace-nowrap space-y-3 mt-3">
+                <p>
+                  Email
+                  <a href="#" class="text-primary">hi@2people.io</a>
+                </p>
+                <p>
+                  Telegram
+                  <a href="#" class="text-primary">@two_people_it</a>
+                </p>
+              </div>
+              <button class="primary-btn text-primary hover:bg-primary hover:text-white font-bold mt-6">Оставить заявку</button>
+            </div>
+
+            <div class="xs:order-first lg:order-none">
+              <h5 class="md:hidden lg:block font-bold text-brand-gray-800">Следите за нами</h5>
+              <div class="flex md:hidden lg:flex gap-6 mt-3">
+                <a href="#">
+                  <img class="w-10 h-10" src="./svg/dark-instagram.svg" alt="">
+                </a>
+                <a href="#">
+                  <img class="w-10 h-10" src="./svg/dark-telegram.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-between gap-5 text-brand-gray-800 mt-8 pb-5 xs:pb-8 md:pb-5">
+          <p class="hidden lg:block">2PEOPLE ASSISTANT © 2024</p>
+          <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <p class="md:hidden lg:block">Пользовательское соглашение</p>
+            <p>Политика конфиденциальности  </p>
+            <h5 class="hidden md:block lg:hidden font-bold text-brand-gray-800">Следите за нами</h5>
+          </div>
+          <p class="hidden sm:block md:hidden">2PEOPLE ASSISTANT © 2024</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
