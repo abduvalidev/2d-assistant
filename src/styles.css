@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  @apply font-bold xs:font-semibold text-2xl xs:text-8 md:text-2xl lg:text-8
+  @apply font-bold xs:font-semibold md:font-bold lg:font-semibold text-2xl xs:text-8 md:text-2xl lg:text-8
 }
 
 h3 {
