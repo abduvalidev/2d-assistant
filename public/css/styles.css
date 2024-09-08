@@ -920,6 +920,9 @@ video {
 .pb-3\.5 {
   padding-bottom: 0.875rem;
 }
+.\!pb-0 {
+  padding-bottom: 0px !important;
+}
 .text-left {
   text-align: left;
 }
